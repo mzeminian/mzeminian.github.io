@@ -8,6 +8,8 @@
 
     <!--Style-->
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <!--Script-->
     <script src="js/main.js"></script>
@@ -16,7 +18,7 @@
 
  <div class="container">
     <div class="content">
-        <div class="section">
+        <div class="section" data-aos="fade-right" data-aos-duration="1000">
             <h1>👋</h1>
             <h3>Hi, my name is Mattia Zeminian.
                 <br>Nineteen.
@@ -27,7 +29,7 @@
             </h3>
         </div>
 
-        <div class="section" id="about">
+        <div class="section" id="about" data-aos="fade-right" data-aos-duration="1000">
             <h1>What Can I Do</h1>
             <ul class="sectionUl">
                 <h3 class="title">Website</h3>
@@ -35,7 +37,6 @@
                 <li>_ Wordpress CMS</li>
                 <li>_ Elementor Plugin</li>
             </ul>
-            <button onclick()="mailto:mzeminian14@gmail.com" class="btn-1" id="contact">CONTACT ME</button>
             <h1>What I Know</h1>
             <ul class="sectionUl">
                 <h3 class="title">Tools</h3>
@@ -46,6 +47,13 @@
                 <li>_ React JS</li>
             </ul>
         </div>
+
+        <div class="section" data-aos="fade-right" data-aos-duration="1000">
+            <h1>My Work</h1>
+            <div class="imgWork" id="dmz">
+                <a href="">Ciao</a>
+            </div>
+        </div>
     </div>
 
 
@@ -53,7 +61,7 @@
 
 
 
-     <div class="hero">
+     <div class="hero" data-aos="fade-left" data-aos-duration="1000">
          <h1>Zeminian<br>Mattia</h1>
          <h2>Simple design and<br>web development</h2>
         <ul class="menu">
@@ -71,9 +79,15 @@
 
     
 <!---<button onclick()="mailto:mzeminian14@gmail.com" class="btn-1">CONTACT ME</button>-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        once: true
+    });
+</script>
+
+
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> edacbfe52b8a0a4291c36907b9cbf4677642de85
