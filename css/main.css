@@ -45,17 +45,16 @@ button:focus {
 
 button {
   background: none;
-  width: 150px;
-  border: 2px solid #000;
+  width: 180px;
+  border: 1px solid #000;
   color: #000;
   display: block;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
-  padding: 10px 15px;
+  padding: 8px 12px;
+  margin: 30px 25px;
   position: relative;
   text-transform: uppercase;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   cursor: pointer;
 }
 
@@ -159,8 +158,20 @@ Layout
   transition: .3s;
 }
 
+a {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #999;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #222;
+}
+
 .content {
-  width: 50%;
+  width: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,7 +201,7 @@ Layout
 .section h1 {
   margin: 0;
   margin-top: 50px;
-  max-width: 350px;
+  max-width: 400px;
 }
 
 .sectionUl {
@@ -206,41 +217,66 @@ Layout
   margin: 10px 0;
 }
 
-.imgWork {
-  width: 400px;
-  height: 400px;
-  margin: 50px 0;
-  border: 1px solid red;
-  background-image: url(/img/dmztech.jpg);
-  background-size: cover;
+#work {
+  height: auto;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
+  margin: 50px 0;
+  width: 350px;
+  height: auto;
+  border: 1px solid #CCC;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 20px #0000003d;
+          box-shadow: 0 0 20px #0000003d;
 }
 
-.imgWork::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  opacity: 0;
-  -webkit-transition: .5s;
-  transition: .5s;
+#left {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-.imgWork a {
-  display: none;
+video {
+  width: 350px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card span {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-.imgWork:hover::after {
-  opacity: 0.8;
-}
-
-.imgWork:hover::after a:hover {
+  margin: 25px 0;
+  width: 300px;
+  height: 1px;
+  background: #CCC;
   display: block;
+}
+
+.card h1 {
+  margin: 10px 25px 2px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.card h2 {
+  margin: 0 25px;
+  font-size: 14px;
+  font-weight: 200;
+  color: #999;
 }
 /*# sourceMappingURL=main.css.map */
